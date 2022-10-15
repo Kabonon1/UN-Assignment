@@ -1,0 +1,9 @@
+Instructions.
+
+1. Download Xampp, install it.
+2. Copy the project folder to: C:\xampp\htdocs and paste the files.
+3. Change the database credentials in the user.php file to match yours.
+4. Import the sqldump files to MySQL Community Server under the Schema called project.
+5. Start Apache Server and navigate to your browser and type:http://localhost/collins/
+6. It should open 'index.php'
+NB: You should have an internet connection for bootstrap and jQuery cdn to function
