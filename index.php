@@ -15,7 +15,6 @@ if(isset($_POST['submit'])){
     $disbursment=$_POST['disbusment'];
     $status=$_POST['status'];
 
-    
 
     $sql="INSERT INTO projects(projectref,title,duration,grants,startdate,datecgf,readiness,typeofreadiness,first_disb,statuss) VALUES
     ('$projectref','$projecttitle','$duration','$grant','$sdate','$cdate','$NAP','$readiness','$disbursment','$status')";
@@ -69,12 +68,31 @@ margin-left:1px;
 margin-right:1px;
 }
 
-
+    body {background-color: powderblue;}
     </style>
     <title>Projects</title>
   </head>
   <body>
-    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">UN Assignment</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" ></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="assign.php">JSON File</a>
+      </li>
+          
+    </ul>
+
+  </div>
+</nav>
+
 <div class= container>
 
     <form class= "row g-3" id="form" method="post" action="projects.php" name='projects'>
